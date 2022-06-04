@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(212, 156, 143);
+    color: rgb(104, 47, 47);
+    margin-top: 20px;
+}
+
+input {
+    background-color: rgb(245, 196, 196);
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px 3px 10px;
+    color: rgb(104, 47, 47);
+}
+
+button {
+    background-color: rgb(104, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 15px 4px 15px;
+}
+
+button:focus {
+    background-color: rgb(145, 74, 74);
+}
+
+.search-container {}
