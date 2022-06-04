@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(212, 156, 143);
     color: rgb(104, 47, 47);
@@ -7,8 +13,8 @@ body {
 input {
     background-color: rgb(245, 196, 196);
     border: none;
-    border-radius: 5px;
-    padding: 3px 10px 3px 10px;
+    border-radius: 30px;
+    padding: 3px 15px 3px 15px;
     color: rgb(104, 47, 47);
 }
 
@@ -16,12 +22,85 @@ button {
     background-color: rgb(104, 47, 47);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 4px 15px 4px 15px;
+    margin-left: 10px;
 }
 
-button:focus {
-    background-color: rgb(145, 74, 74);
+button:hover {
+    background-color: rgb(123, 66, 66);
 }
 
-.search-container {}
+/* artist card */
+.artist-card-container {
+    margin: 30px 0px;
+    display: grid;
+    gap: 40px 0;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.image-container {
+    background-image: url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1");
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: width 2s;
+    border-radius: 12px 12px 0 0;
+}
+
+.image-container-inner {
+    border-radius: 12px 12px 0 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: width 2s;
+}
+
+.image-container-inner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.artist-card:hover .image-container-inner {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid brown;
+}
+
+.artist-card:hover {
+    background-color: brown;
+}
+
+.info-container {
+    padding: 10px;
+    transition: width 2s;
+}
+
+.artist-card:hover .info-container {
+    color: white;
+}
+
+.info-container p {
+    margin-top: 15px;
+}
+
+.button-title {
+    margin-left: 10px;
+    opacity: 0;
+    transition: width 2s;
+}
+
+.album-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
