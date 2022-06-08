@@ -56,3 +56,7 @@ const adventurer = {
 }
 const CatName = adventurer.dog?.name;
 console.log(CatName);
+//=====================
+const randomNum = [1, 23, 4, 3, 5, 2, 9, 4, 8];
+const userMap = randomNum.map(x => x * 2);
+console.log(userMap);
