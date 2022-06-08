@@ -39,3 +39,7 @@ const customer = {
 const { name, profession, age } = customer;
 console.log(name, age);
 //====================
+const profile = ['mahmodul shahin', 12000, 18,];
+const [nam, balance, boyosh] = profile;
+console.log(balance);
+//==================
