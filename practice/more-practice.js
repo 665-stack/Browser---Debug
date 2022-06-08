@@ -60,3 +60,13 @@ console.log(CatName);
 const randomNum = [1, 23, 4, 3, 5, 2, 9, 4, 8];
 const userMap = randomNum.map(x => x * 2);
 console.log(userMap);
+//========================
+/* 
+==> map() array er protity upadan er jonno function ke call kore abong function er result ke akti noton array te niye return kore.
+
+==> forEach() akti array er protity upadan er jonno function ke call kore. kinto kono kicu return kore na.
+
+==> filter() array er protity upadan er modde jeta jeta shorto fullfill korbe taderke noton akta array te rekhe shetake return kore. filter() array return kore.
+
+==> find() array er prothom je upadan shorto full fill korbe shodu takei return korbe. find element return kore.
+*/
