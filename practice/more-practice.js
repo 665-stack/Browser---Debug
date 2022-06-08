@@ -43,3 +43,8 @@ const profile = ['mahmodul shahin', 12000, 18,];
 const [nam, balance, boyosh] = profile;
 console.log(balance);
 //==================
+const defaultPara = (a, b = 5) => {
+    return a * b;
+}
+console.log(defaultPara(5));
+//===================
