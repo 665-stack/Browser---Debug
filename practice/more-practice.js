@@ -48,3 +48,11 @@ const defaultPara = (a, b = 5) => {
 }
 console.log(defaultPara(5));
 //===================
+const adventurer = {
+    name: 'Munsora Mim',
+    cat: {
+        name: 'Bilo'
+    }
+}
+const CatName = adventurer.dog?.name;
+console.log(CatName);
