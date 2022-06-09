@@ -30,3 +30,25 @@ for (let i = 0; i < numbers.length; i++) {
 for (const number of numbers) {
     console.log('for of --', number);
 }
+//====================================
+// 5. function
+function multiply(num1, num2) {
+    return result = num1 * num2;
+}
+console.log('multifly num in func -- ', multiply(5, 5));
+
+//==========================
+// 6. object
+// 3 way to access property by name
+const student = {
+    name: "mahmodul shahin",
+    age: 18,
+    favMovies: ['Lord of the rings', 'The Hobbit', 'John Wick', 'Intersteller'],
+}
+// direct by property
+console.log('1st way -- ', student.age);
+// access via property name string
+console.log('2nd way -- ', student['favMovies']);
+// access via property name in a variable
+const myVariable = 'name'
+console.log('3rd way -- ', student[myVariable]);
