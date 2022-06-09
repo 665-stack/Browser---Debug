@@ -23,7 +23,7 @@ const addThree = (x, y, z) => x + y + z
 const doMath = (num1, num2, num3) => {
     const sum = num1 + num2 + num3;
     const divide = sum / 2;
-    return sum;
+    return divide;
 }
 
 //=========================
