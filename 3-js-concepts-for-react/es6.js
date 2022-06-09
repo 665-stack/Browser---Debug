@@ -7,4 +7,23 @@ const student = {
 // 1. template string
 const about = `My name is ${student.name}. And my age is ${student.age}. My fav number is ${numbers[3]}. Most fav science related movie is ${student.favMovies[3]}
 `;
-console.log(about);
+console.log('about -- ', about);
+
+//===============================
+
+// 2. arrow function 
+const getFiftyFive = () => 55;
+
+const addSixtyFive = num => num + 65;
+
+const isEven = x => x % 2 == 0;
+
+const addThree = (x, y, z) => x + y + z
+
+const doMath = (num1, num2, num3) => {
+    const sum = num1 + num2 + num3;
+    const divide = sum / 2;
+    return sum;
+}
+
+//=========================
