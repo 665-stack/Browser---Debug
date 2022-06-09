@@ -27,3 +27,13 @@ const doMath = (num1, num2, num3) => {
 }
 
 //=========================
+// 3. spread operator; jodi uporer numbers array theke sompurno bichinno babe arekte array make korte cai.
+const newNumber = [...numbers]
+numbers.push(99)
+numbers.push(89)
+// create a new array from an older array and add an element
+const currentNumbers = [...numbers, 55]
+console.log(numbers);
+console.log('newNumber -- ', newNumber);
+console.log('currentNumbers -- ', currentNumbers);
+
