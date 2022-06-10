@@ -1,4 +1,4 @@
-/* 
+/*
 ======= fundamentals ============
 1.1 variable(const, let) three types of variable
 
@@ -43,3 +43,32 @@
 
 
 */
+
+
+// some of object shorthand here ------>
+
+// akhane object er property er name er value ta akhaner global variable theke astece.
+const x = 50;
+const y = 100;
+const obj = {
+    x: x,
+    y: y
+}
+console.log('obj -- ', obj);
+// more shortcut
+const obj2 = { x, y }
+console.log('obj2 -- ', obj2);
+
+
+//------
+// another example
+const name = 'Bhawal';
+const area = 'Gazipur';
+const raja = {
+    name: name,
+    area: area,
+}
+console.log('raja -- ', raja);
+// more shortcut
+const raja2 = { name, area };
+console.log('raja2 -- ', raja2);
