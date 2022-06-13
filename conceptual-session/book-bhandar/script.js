@@ -88,15 +88,22 @@ const showBooks = (books) => {
 };
 
 const createCard = (book) => {
+    // console.log(book);
     const div = document.createElement("div");
     div.classList.add("card");
 
-    let overview = book.overview;
+    let overview;
+    if (book.overview.length > 100) {
+        overview = book.overview.slice(0, 100) + "...";
+    } else {
+        overview = book.overview;
+    }
+    console.log(overview);
 
     div.innerHTML = `
     <div class="image-container">
       <img
-        src="${book.Image}"
+        src="${book.image}"
         alt=""
       />
       <div class="button-container">
