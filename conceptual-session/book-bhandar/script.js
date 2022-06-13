@@ -98,7 +98,7 @@ const createCard = (book) => {
     } else {
         overview = book.overview;
     }
-    console.log(overview);
+    // console.log(overview);
 
     div.innerHTML = `
     <div class="image-container">
@@ -149,7 +149,7 @@ const displayWishlist = () => {
     const wishlist = getWishlistItems();
     console.log(wishlist);
 
-    bookList.forEach((book) => {
+    wishlist.forEach((book) => {
         const div = createCard(book);
         document.getElementById("wishlist").appendChild(div);
     });
