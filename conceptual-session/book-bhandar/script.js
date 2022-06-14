@@ -48,14 +48,14 @@ const bookList = [
 ];
 
 const wishlistItems = [];
-const cart = [];
+const cartbal = [];
 
 const getWishlistItems = () => {
     return bookList.filter((book) => wishlistItems.includes(book.id.toString()));
 };
 
 const getCartItems = () => {
-    return bookList.filter((book) => cart.includes(book.id.toString()));
+    return bookList.filter((book) => cartbal.includes(book.id));
 };
 
 const switchTab = (id) => {
@@ -88,7 +88,7 @@ const showBooks = (books) => {
 };
 
 const createCard = (book) => {
-    // console.log(book);
+
     const div = document.createElement("div");
     div.classList.add("card");
 
@@ -98,7 +98,6 @@ const createCard = (book) => {
     } else {
         overview = book.overview;
     }
-    // console.log(overview);
 
     div.innerHTML = `
     <div class="image-container">
@@ -108,7 +107,7 @@ const createCard = (book) => {
       />
       <div class="button-container">
         <button onclick="addToWishlist('${book.id}')" class="button"><i class="fa-solid fa-heart"></i></button>
-        <button onclick="AddToCart" class="button">Add To Cart</button>
+        <button onclick="addToCart(${book.id})" class="button">Add To Cart</button>
       </div>
     </div>
     <div class="info-container">
@@ -126,28 +125,33 @@ const createCard = (book) => {
 showBooks(bookList);
 
 const addToCart = (id) => {
-    cart.push(id);
+    console.log(id);
+    cartbal.push(id);
+
 };
 
 const addToWishlist = (id) => {
     if (wishlistItems.indexOf(id) === -1) {
         wishlistItems.push(id);
+
     }
 };
 
 const displayCart = () => {
+    document.getElementById("cart").innerHTML = "";
     const cart = getCartItems();
     console.log(cart);
-
     cart.forEach((book) => {
+
         const div = createCard(book);
         document.getElementById("cart").appendChild(div);
     });
 };
 
 const displayWishlist = () => {
+    document.getElementById("wishlist").innerHTML = ""
     const wishlist = getWishlistItems();
-    console.log(wishlist);
+
 
     wishlist.forEach((book) => {
         const div = createCard(book);
